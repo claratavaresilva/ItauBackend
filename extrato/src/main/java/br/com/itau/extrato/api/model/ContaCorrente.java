@@ -1,13 +1,18 @@
 package br.com.itau.extrato.api.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import javax.validation.constraints.Size;
 
 public class ContaCorrente implements ApiDTO{
+	
+	@Size(max = 4)
 	@JsonProperty("agencia")
 	private String agencia;
 	
+	@Size(max = 5)
 	@JsonProperty("conta")
 	private String conta;
 	
+	@Size(max = 1)
 	@JsonProperty("dac")
 	private String dac;
 	

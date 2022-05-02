@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ParamsExtrato {
 	
 	@JsonProperty("agencia")
-	private String agencia = "4444";
+	private String agencia;
 	
 	@JsonProperty("conta")
-	private String conta = "55555";
+	private String conta;
 	
 	@JsonProperty("dac")
-	private String dac = "1";
+	private String dac;
 
 	public String getAgencia() {
 		return agencia;

@@ -1,13 +1,12 @@
-package br.com.itau.extrato.api.model;
-import com.fasterxml.jackson.annotation.JsonProperty;
+package br.com.itau.extrato.viewModel.model;
 
-public class Saldo implements ApiDTO {
-	@JsonProperty("saldo")
+import br.com.itau.extrato.viewModel.ViewEntidade;
+
+public class SaldoView implements ViewEntidade {
 	private String saldo;
 	
-	@JsonProperty("lis")
 	private String lis;
-	
+
 	public String getSaldo() {
 		return saldo;
 	}
@@ -23,5 +22,5 @@ public class Saldo implements ApiDTO {
 	public void setLis(String lis) {
 		this.lis = lis;
 	}
-
+	
 }
