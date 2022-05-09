@@ -25,4 +25,10 @@ public class SaldoController {
 	public ResponseEntity<ViewEntidade> saldo(@RequestBody ParamsExtrato params) throws Exception{
 		return ResponseEntity.ok().body(SaldoMapper.getSaldo(service.getSaldo(params)));
 	}
+	
+	@ResponseBody
+	@PostMapping("/saldoTotal")
+	public ResponseEntity<Double> saldoTotal(@RequestBody ParamsExtrato params) throws Exception{
+		return ResponseEntity.ok().body(SaldoMapper.getSaldoTotal(service.getSaldo(params)));
+	}
 }

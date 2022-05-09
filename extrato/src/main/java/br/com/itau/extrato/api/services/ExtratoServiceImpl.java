@@ -1,9 +1,8 @@
 package br.com.itau.extrato.api.services;
 
-import br.com.itau.extrato.api.model.ApiDTO;
+import br.com.itau.extrato.api.model.Extrato;
 import br.com.itau.extrato.api.params.ParamsExtrato;
 import br.com.itau.extrato.utils.ClientWebTarget;
-import br.com.itau.extrato.api.model.Extrato;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
@@ -29,7 +28,7 @@ public class ExtratoServiceImpl implements ExtratoService {
     
     
 	@Override
-	public ApiDTO getExtrato(ParamsExtrato params) throws Exception {
+	public Extrato getExtrato(ParamsExtrato params) throws Exception {
 		Response response = this.webTarget
                 .client()
                 .path(PATH_API)

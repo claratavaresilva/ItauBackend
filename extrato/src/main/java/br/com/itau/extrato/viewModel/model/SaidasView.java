@@ -8,8 +8,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import br.com.itau.extrato.api.model.Dados;
 
-public class ExtratoView {
-	@JsonProperty("entradas/saídas")
+public class SaidasView {
+	@JsonProperty("saídas passadas")
 	private List<Dados> list = new ArrayList<Dados>();
 	
 	@JsonIgnore
@@ -18,11 +18,10 @@ public class ExtratoView {
 	public Dados getExtrato() {
 		return extrato;
 	}
-	
+
 	public void setExtrato(Dados extrato) {
 		this.extrato = extrato;
 	}
-
 
 	public List<Dados> getList() {
 		return list;

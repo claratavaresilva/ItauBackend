@@ -3,15 +3,51 @@ package br.com.itau.extrato.api.params;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ParamsConta {
+	
 	@JsonProperty("agencia")
-	private String agencia = "4444";
+	private String agencia;
 	
 	@JsonProperty("conta")
-	private String conta = "55555";
+	private String conta;
 	
 	@JsonProperty("dac")
-	private String dac = "1";
+	private String dac;
 	
 	@JsonProperty("senha")
-	private String senha = "123456";
+	private String senha;
+
+	public String getAgencia() {
+		return agencia;
+	}
+
+
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+
+	public String getConta() {
+		return conta;
+	}
+
+	public void setConta(String conta) {
+		this.conta = conta;
+	}
+
+	public String getDac() {
+		return dac;
+	}
+
+	public void setDac(String dac) {
+		this.dac = dac;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	
 }

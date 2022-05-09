@@ -1,23 +1,17 @@
-package br.com.itau.extrato.api.model;
-import com.fasterxml.jackson.annotation.JsonProperty;
+package br.com.itau.extrato.viewModel.model;
 
+import br.com.itau.extrato.viewModel.ViewEntidade;
 
+public class ContaView implements ViewEntidade {
 
-public class ContaCorrente implements ApiDTO{
-	
-	@JsonProperty("agencia")
 	private String agencia;
 	
-	@JsonProperty("conta")
 	private String conta;
-	
-	@JsonProperty("dac")
+
 	private String dac;
 	
-	@JsonProperty("nome")
 	private String nome;
 	
-	@JsonProperty("sobrenome")
 	private String sobrenome;
 
 	public String getAgencia() {
@@ -59,5 +53,4 @@ public class ContaCorrente implements ApiDTO{
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
 	}
-	
 }
