@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import br.com.itau.extrato.api.model.Dados;
 
 public class ExtratoView {
-	@JsonProperty("entradas/saídas")
+	@JsonProperty
 	private List<Dados> list = new ArrayList<Dados>();
 	
 	@JsonIgnore

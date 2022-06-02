@@ -47,6 +47,5 @@ public class ContaServiceImpl implements ContaService {
         return response.readEntity(ContaCorrente.class);
 	}
 	
-	
 
 }
